@@ -54,6 +54,18 @@ public class App {
         }
     }
 
+    /*
+
+    SELECT e.emp_no, e.first_name, t.title, dep.dept_name
+FROM employees e
+JOIN titles t ON t.emp_no = e.emp_no
+JOIN dept_emp de ON e.emp_no = de.emp_no
+JOIN departments dep ON dep.dept_no = de.dept_no
+WHERE e.emp_no = 1 AND t.to_date = '9999-01-01'
+AND de.to_date = '9999-01-01'
+
+     */
+
     public Employee getEmployee(int ID)
     {
         try
