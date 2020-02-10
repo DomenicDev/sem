@@ -44,8 +44,7 @@ A request for adding an employee's details is sent to HR.
 
 ## EXTENSIONS
 
-3. **Employee's details are incomplete**:
-    1. HR advisor informs finance details are incomplete.
+None.
 
 ## SUB-VARIATIONS
 

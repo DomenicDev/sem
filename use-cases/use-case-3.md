@@ -1,5 +1,5 @@
 
-# USE CASE: 3 For Department Manager, Produce a Report on the Salary of Employees in a Department 
+# USE CASE: 3 Produce a Report on the Salary of Employees 
 
 ## CHARACTERISTIC INFORMATION
 

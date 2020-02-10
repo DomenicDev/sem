@@ -46,7 +46,7 @@ A change request for an employee's details is received.
 ## EXTENSIONS
 
 3. **Employee does not exist**:
-    1. HR advisor gets in contact with employee.
+    1. HR advisor gets in contact with requester.
 
 ## SUB-VARIATIONS
 
