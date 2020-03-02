@@ -1,5 +1,5 @@
 
-# USE CASE: 1 Produce a Report on the Salary of all Employees
+# USE CASE: 1 Produce a Report 
 
 ## CHARACTERISTIC INFORMATION
 

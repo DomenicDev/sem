@@ -14,10 +14,10 @@ public class App {
     /**
      * Connect to the MySQL database.
      */
-    public void connect() {
+    public void connect(String location) {
         try {
             // Load Database driver
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             System.out.println("Could not load SQL driver");
             System.exit(-1);
@@ -30,7 +30,7 @@ public class App {
                 // Wait a bit for db to start
                 Thread.sleep(5000);
                 // Connect to database
-                con = DriverManager.getConnection("jdbc:mysql://db:3306/employees?useSSL=false", "root", "example");
+                con = DriverManager.getConnection("jdbc:mysql://" + location + "/employees?allowPublicKeyRetrieval=true&useSSL=false", "root", "example");
                 System.out.println("Successfully connected");
                 break;
             } catch (SQLException sqle) {
@@ -170,7 +170,7 @@ AND de.to_date = '9999-01-01'
         App a = new App();
 
         // Connect to database
-        a.connect();
+        a.connect("localhost:33060");
 
         // Extract employee salary information
         List<Employee> employees = a.getAllSalaries();
