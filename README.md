@@ -6,3 +6,8 @@ Let's see where we get here...
 - Develop Build Status [![Build Status](https://travis-ci.com/DomenicDev/sem.svg?branch=develop)](https://travis-ci.com/DomenicDev/sem)
 - License [![LICENSE](https://img.shields.io/github/license/DomenicDev/sem.svg?style=flat-square)](https://github.com/DomenicDev/sem/blob/master/LICENSE)
 - Release [![Releases](https://img.shields.io/github/release/DomenicDev/sem/all.svg?style=flat-square)](https://github.com/DomenicDev/sem/releases)
+
+
+## Code Coverage
+[![codecov](https://codecov.io/gh/DomenicDev/sem/branch/master/graph/badge.svg)](https://codecov.io/gh/DomenicDev/sem)
+
