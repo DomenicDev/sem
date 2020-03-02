@@ -143,10 +143,10 @@ AND de.to_date = '9999-01-01'
 
     /**
      * Prints a list of employees.
+     *
      * @param employees The list of employees to print.
      */
-    public void printSalaries(List<Employee> employees)
-    {
+    public void printSalaries(List<Employee> employees) {
         if (employees == null) {
             System.out.println("list is null, nothing to print.");
             return;
@@ -155,8 +155,7 @@ AND de.to_date = '9999-01-01'
         // Print header
         System.out.println(String.format("%-10s %-15s %-20s %-8s", "Emp No", "First Name", "Last Name", "Salary"));
         // Loop over all employees in the list
-        for (Employee emp : employees)
-        {
+        for (Employee emp : employees) {
             if (emp == null) continue;
             String emp_string =
                     String.format("%-10s %-15s %-20s %-8s",
@@ -170,7 +169,11 @@ AND de.to_date = '9999-01-01'
         App a = new App();
 
         // Connect to database
-        a.connect("localhost:33060");
+        if (args.length < 1) {
+            a.connect("localhost:3306");
+        } else {
+            a.connect(args[0]);
+        }
 
         // Extract employee salary information
         List<Employee> employees = a.getAllSalaries();
